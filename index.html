@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Popup</title>
+   <meta charset="UTF-8">
+   <meta name="format-detection" content="telephone=no">
+   <link rel="stylesheet" href="css/style.min.css?_v=20230831234109">
+   <link rel="shortcut icon" href="favicon.ico">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+   <div class="wrapper">
+      <main class="page">
+         <div class="main-page">
+            <a href="#popup" class="main-page__btn btn popup-open">
+               Нажми на меня
+            </a>
+         </div>
+      </main>
+   </div>
+   <div id="popup" class="popup">
+      <div class="popup__body">
+         <div class="popup__content">
+            <a href="" class="popup__close popup-close"></a>
+            <h1 class="popup__title">Оставить заявку</h1>
+            <form action="#" id="form" class="popup__form form">
+               <div class="popup__input">
+                  <div class="palceholder">
+                     <label for="name">ФИО</label>
+                     <span class="star">*</span>
+                  </div>
+                  <input type="text" name="userName" class="input req" tabindex="1">
+               </div>
+               <div class="popup__input">
+                  <div class="palceholder">
+                     <label for="tel">+7 (___) ___ - __ - __</label>
+                     <span class="star">*</span>
+                  </div>
+                  <input type="text" name="tel" class="input req" tabindex="2" data-phone-pattern>
+               </div>
+               <div class="popup__select select">
+                  <div class="select__body">
+                     <button class="select__btn" tabindex="3" type="button">Выберите город</button>
+                     <ul class="select__list">
+                        <li class="select__item" data-value="Krasnodar">Краснодар</li>
+                        <li class="select__item" data-value="RostovOnDon">Ростов-на-Дону</li>
+                        <li class="select__item" data-value="Anapa">Анапа</li>
+                        <li class="select__item" data-value="Moscow">Москва</li>
+                        <li class="select__item" data-value="Voronezh">Воронеж</li>
+                        <li class="select__item" data-value="Sochi">Сочи</li>
+                        <li class="select__item" data-value="StPetersburg">Санкт-Петербург</li>
+                        <li class="select__item" data-value="Belgorod">Белгород</li>
+                        <li class="select__item" data-value="Gelendzhik">Геленджик</li>
+                     </ul>
+                     <input type="text" name="select-city" value="" class="select__input-hidden">
+                  </div>
+               </div>
+               <div class="popup__message">
+                  <textarea class="textarea" placeholder="Сообщение" tabindex="4"></textarea>
+               </div>
+               <div class="popup__bottom">
+                  <button type="submit" class="popup__btn btn" tabindex="5">Оставить заявку</button>
+                  <div class="popup__concordance">
+                     Нажимая кнопку, я даю согласие на обработку персональных данных, в соответствии с
+                     <a href="">Политикой</a>, и соглашаюсь с <a href="">Правилами</a>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230831234109"></script>
+   <script src="js/app.min.js?_v=20230831234109"></script>
+</body>
+
+</html>
